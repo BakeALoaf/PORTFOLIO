@@ -28,14 +28,23 @@
   color: #f1f1f1;
 }
 
-.main img{
-  margin-left: 100px;
+// .main{
+//   z-index: 1;
+//   margin-left: 100px;
+//   padding: 0px 10px;
+// }
+
+.main_body {
+  z-index: 1;
+  margin-left: 110px;
   padding: 0px 10px;
+  color: white;
 }
 
 .main img{
-  margin: 0;
-  padding: 0;
+  z-index: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   position: absolute;
   height: 100vh;
   width: 100vw;
