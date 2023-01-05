@@ -7,5 +7,6 @@ Rails.application.routes.draw do
 
   resources :cv, only: %i[index]
   resources :contacts, only: %i[index]
+  resources :works, only: %i[index]
 
 end
