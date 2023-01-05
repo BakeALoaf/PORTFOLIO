@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :cv, only: %i[index]
-  resources :contacts, only: %i[index]
+  resources :contacts, only: %i[new create]
   resources :works, only: %i[index]
 
 end
