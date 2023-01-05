@@ -6,3 +6,12 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import HiddenController from "./hidden_controller"
+application.register("hidden", HiddenController)
+
+import TypedJs2Controller from "./typed_js2_controller"
+application.register("typed-js2", TypedJs2Controller)
+
+import TypedJsController from "./typed_js_controller"
+application.register("typed-js", TypedJsController)

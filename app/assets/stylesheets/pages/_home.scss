@@ -3,7 +3,7 @@
 }
 
 .sidenav {
-  height: 100%;
+  height: 100vh;
   width: 100px;
   position: fixed;
   z-index: 1;
@@ -38,6 +38,14 @@
   color: #f1f1f1;
 }
 
+.hiddendiv {
+  display: none;
+  transition: 1s;
+}
+
+.james:hover .hiddendiv{
+  display: contents;
+}
 .main {
 background-image: url("portfolio.jpg");
 background-color: #cccccc;
@@ -66,9 +74,6 @@ z-index: -1;
   font-size: 100px;
 }
 
-.james:hover{
-  color: blue;
-}
 
 .cv {
   display: flex;
