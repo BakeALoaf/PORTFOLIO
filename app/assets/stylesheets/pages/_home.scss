@@ -1,3 +1,7 @@
+.container {
+  height: 0px;
+}
+
 .sidenav {
   height: 100%;
   width: 100px;
@@ -47,6 +51,14 @@ z-index: -1;
   background-color: #cccccc;
   height: 100vh;
   padding-top: 80px;
+  z-index: -1;
+  }
+
+.mainform {
+  background-image: url("portfolio.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  padding-top: 40px;
   z-index: -1;
   }
 

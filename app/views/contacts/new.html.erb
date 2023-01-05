@@ -1,4 +1,13 @@
-<div class="container">
+<div class="sidenav">
+  <div class="links"><a href="/">About</a></div>
+  <div class="links"><a href="/cv">My CV</a></div>
+  <div class="links"><a href="/works">Work</a></div>
+  <div class="links"><a href="/contacts/new">Contact</a></div>
+</div>
+
+<div class="mainform">
+  <div class="welcome">
+    <div class="container">
   <h1>Contact Form</h1>
   <%= form_for @contact do |f| %>
     <div class="col-md-6">
@@ -20,4 +29,6 @@
       <%= f.submit 'Send Message', class: 'btn btn-primary' %>
     </div>
   <% end %>
+</div>
+  </div>
 </div>
