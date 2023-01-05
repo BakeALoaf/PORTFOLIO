@@ -12,6 +12,19 @@
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
+  box-shadow: 10px 0 5px -2px rgb(255, 255, 255);
+}
+
+.sidenavwork {
+  height: 100vh;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
 .links {
@@ -28,6 +41,13 @@
 }
 
 .sidenav a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.sidenavwork a {
   text-decoration: none;
   font-size: 15px;
   color: white;
@@ -60,16 +80,33 @@ z-index: -1;
   height: 100vh;
   padding-top: 80px;
   z-index: -1;
-  }
+}
 
-  .icons {
-    display: inline;
-    padding-left: 7px;
-  }
+.main3 {
+  // padding-left: 120px;
+// background-image: url("portfolio.jpg");
+// background-color: #cccccc;
+// height: 100vh;
+// // padding-top: 20px;
+// z-index: -1;
+}
 
-  .iconcontainer {
-    margin-top: 150px;
-  }
+.icons {
+  display: inline;
+  padding-left: 7px;
+}
+
+// .workimg {
+//   display: flex;
+//   flex-wrap: wrap;
+//   // margin-left: 50px;
+//   // margin-top: 30px;
+// }
+
+
+.iconcontainer {
+  margin-top: 150px;
+}
 
 .mainform {
   background-image: url("portfolio.jpg");
@@ -83,6 +120,35 @@ z-index: -1;
   font-size: 100px;
 }
 
+.gallery {
+  --n: 1; /* number of rows*/
+  --m: 4; /* number of columns */
+  --g: 0px;  /* control the gap */
+  --f: .8;   /* control the scale factor */
+
+  display: grid;
+  gap: var(--g);
+  width: 92vw;
+  height: 100vh;
+  grid-template-columns: repeat(var(--m),auto);
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: .35s linear;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  width:  calc(100vh*var(--f)/var(--n));
+  height: calc(100vw*var(--f)/var(--m));
+}
 
 .cv {
   display: flex;
@@ -93,19 +159,22 @@ z-index: -1;
 }
 
 .welcome {
-
   display: flex;
   justify-content: left;
-  margin-left: 110px;
+  margin-left: 130px;
   padding: 0px 10px;
   color: white;
 }
 
+.welcomework {
+  padding-left: 100px;
+}
+
 .main1 img {
   display: flex;
-  margin-left: 115px;
+  margin-left: 135px;
   border-radius: 10px;
-  width: 90vw;
+  width: 87vw;
   height: 100px;
   background-color: rgba(255, 255, 255, 0.5);
 }
